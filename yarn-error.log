@@ -1,0 +1,81 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add *
+
+PATH: 
+  C:\Users\psydo\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\psydo\bin;C:\Python39\Scripts;C:\Python39;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs;C:\Program Files\OpenJDK\openjdk-8u275-b01\bin;C:\Users\psydo\AppData\Local\Android\Sdk\platform-tools;C:\Program Files (x86)\Yarn\bin;C:\Users\psydo\AppData\Local\Microsoft\WindowsApps;C:\Users\psydo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\psydo\AppData\Roaming\Composer\vendor\bin;C:\Users\psydo\AppData\Local\atom\bin;C:\Users\psydo\AppData\Roaming\npm;C:\Users\psydo\AppData\Local\Android\Sdk;C:\Users\psydo\AppData\Local\Android\Sdk\tools;C:\Program Files\OpenJDK\openjdk-8u275-b01;C:\Users\psydo\AppData\Local\Yarn\bin;C:\Users\psydo\AppData\Local\GitHubDesktop\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  15.5.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/*: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66097:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140749:22)
+      at Request.emit (node:events:376:20)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141721:10)
+      at Request.emit (node:events:376:20)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141643:12)
+      at Object.onceWrapper (node:events:482:28)
+      at IncomingMessage.emit (node:events:388:22)
+      at endReadableNT (node:internal/streams/readable:1305:12)
+      at processTicksAndRejections (node:internal/process/task_queues:80:21)
+
+npm manifest: 
+  {
+    "name": "evaluate-news-nlp",
+    "version": "0.0.1",
+    "main": "index.js",
+    "scripts": {
+      "test": "jest",
+      "start": "nodemon src/server/index.js",
+      "build-prod": "webpack --config webpack.prod.js",
+      "build-dev": "webpack-dev-server  --config webpack.dev.js"
+    },
+    "keywords": [],
+    "author": "PUT_YOUR_NAME_HERE",
+    "description": "PUT_SMALL_DESCRIPTION_HERE",
+    "dependencies": {
+      "axios": "^0.21.1",
+      "body-parser": "^1.19.0",
+      "cors": "^2.8.5",
+      "dotenv": "^8.2.0",
+      "express": "^4.17.1",
+      "webpack": "^4.44.2",
+      "webpack-cli": "^3.3.12"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.11.6",
+      "@babel/preset-env": "^7.11.5",
+      "@types/jest": "^26.0.20",
+      "babel-loader": "^8.1.0",
+      "babel-polyfill": "^6.26.0",
+      "clean-webpack-plugin": "^3.0.0",
+      "css-loader": "^4.3.0",
+      "file-loader": "^6.1.1",
+      "html-webpack-plugin": "^3.2.0",
+      "jest": "^26.5.3",
+      "mini-css-extract-plugin": "^0.9.0",
+      "node-sass": "^4.14.1",
+      "nodemon": "^2.0.7",
+      "optimize-css-assets-webpack-plugin": "^5.0.4",
+      "prettier": "^2.2.1",
+      "sass-loader": "^10.0.3",
+      "style-loader": "^2.0.0",
+      "supertest": "6.1.3",
+      "terser-webpack-plugin": "^1.4.5",
+      "webpack-dev-server": "^3.11.0",
+      "workbox-webpack-plugin": "^5.1.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
